@@ -1,9 +1,10 @@
 ---
 title: "R Cheatsheet Notebook by Soyoung Park"
-output:
-  pdf_document: default
-  html_notebook: default
-  html_document: default
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    theme: spacelab
 ---
 Updated May 31, 2017
 
