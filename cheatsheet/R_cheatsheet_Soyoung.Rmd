@@ -5,25 +5,31 @@ output:
     fig_height: 4
     highlight: pygments
     theme: spacelab
+    
 ---
 Updated May 31, 2017
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+[R Markdown](http://rmarkdown.rstudio.com) Notebook. 
 
 
+### shortcuts
+* ctrl+L: clear console
+* rm(list=ls()) #remove all the variables from the workspace
 
-ctrl+L: clear console
-rm(list=ls()) #remove all the variables from the workspace
-install.packages("dplyr")
-getwd()
-setwd("~/Desktop/Statistics_with_R_Duke/1_Introduction to Probability and Data/project/")
-load("brfss2013.RData")
+* getwd()
+* setwd("~/Desktop/Statistics_with_R_Duke/1_Introduction to Probability and Data/project/")
+* *Run* button within the chunk or *Cmd+Shift+Enter*. 
+* Add a new chunk : *Insert Chunk* or by *Cmd+Option+I*.
+* click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
+
+
+```{r}
+#install.packages("dplyr")
+#load("brfss2013.RData")
 library(ggplot2)
 library(dplyr)
-For md file, make sure “run all”
- 
+```
+
  
 ###Lattice
 http://www.isid.ac.in/~deepayan/R-tutorials/labs/04_lattice_lab.pdf
@@ -39,19 +45,18 @@ http://little-book-of-r-for-multivariate-analysis.readthedocs.io/en/latest/src/m
 #ggplot2 Version of Figures in Lattice: Multivariate Data Visualization with R
 https://learnr.files.wordpress.com/2009/08/latbook.pdf
  
-And datacamp,
  
 ###ggplot2 doc
 http://ggplot2.tidyverse.org/reference/#section-plot-basics
  
 ###packages
-Package ‘mlmRev’:Multilevel Modelling
+* Package ‘mlmRev’:Multilevel Modelling
 https://cran.r-project.org/web/packages/mlmRev/mlmRev.pdf
  
-Package ‘nlme’:Fit and compare Gaussian linear and nonlinear mixed-effects models
+* Package ‘nlme’:Fit and compare Gaussian linear and nonlinear mixed-effects models
 https://cran.r-project.org/web/packages/nlme/nlme.pdf
  
-Package ‘GGally’:
+* Package ‘GGally’:
 'GGally' extends 'ggplot2' by adding several functions to reduce the complexity of combining geometric objects with transformed data. Some of these functions include a pairwise plot matrix, a two group pairwise plot matrix, a parallel coordinates plot, a survival plot, and several functions to plot networks.
 https://cran.r-project.org/web/packages/GGally/GGally.pdf
  
@@ -63,28 +68,17 @@ data("iris")
 ggpairs(iris, aes(colour = Species, alpha = 0.4))
 ```
  
-Package ‘googleVis’
+* Package ‘googleVis’
 https://cran.rstudio.com/web/packages/googleVis/googleVis.pdf
 R interface to Google's chart tools, allowing users to create interactive charts based on data frames. Charts are displayed locally via the R HTTP help server. A modern browser with an Internet connection is required and for some charts a Flash player. The data remains local and is not uploaded to Google.
 https://developers.google.com/chart/
  
  
  
-Summary of Useful packages:
+### Summary of Useful packages:
 https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages
  
-Gaston Sanchez
+### Gaston Sanchez
 http://gastonsanchez.com/blog
 https://gastonsanchez.wordpress.com/2012/08/27/scatterplot-matrices-with-ggplot/
 
-
-```{r}
-plot(cars)
-```
-
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
-
-
-
-
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
