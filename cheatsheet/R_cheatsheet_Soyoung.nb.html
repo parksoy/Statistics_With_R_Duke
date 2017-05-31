@@ -176,33 +176,42 @@ $(document).ready(function () {
 <p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Cmd+Shift+Enter</em>.</p>
 <p>ctrl+L: clear console rm(list=ls()) #remove all the variables from the workspace install.packages(“dplyr”) getwd() setwd(“~/Desktop/Statistics_with_R_Duke/1_Introduction to Probability and Data/project/”) load(“brfss2013.RData”) library(ggplot2) library(dplyr) For md file, make sure “run all”</p>
-<div id="lattice" class="section level1">
-<h1>Lattice</h1>
+<div id="lattice" class="section level3">
+<h3>Lattice</h3>
 <p><a href="http://www.isid.ac.in/~deepayan/R-tutorials/labs/04_lattice_lab.pdf" class="uri">http://www.isid.ac.in/~deepayan/R-tutorials/labs/04_lattice_lab.pdf</a></p>
 </div>
-<div id="keyboard-shortcut" class="section level1">
-<h1>Keyboard shortcut</h1>
+<div id="keyboard-shortcut" class="section level3">
+<h3>Keyboard shortcut</h3>
 <p><a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts" class="uri">https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts</a></p>
 </div>
-<div id="r-commands" class="section level1">
-<h1>R commands</h1>
+<div id="r-commands" class="section level3">
+<h3>R commands</h3>
 <p><a href="https://www.personality-project.org/r/r.commands.html" class="uri">https://www.personality-project.org/r/r.commands.html</a></p>
 </div>
-<div id="r-multivariate" class="section level1">
-<h1>R multivariate</h1>
+<div id="r-multivariate" class="section level3">
+<h3>R multivariate</h3>
 <p><a href="http://little-book-of-r-for-multivariate-analysis.readthedocs.io/en/latest/src/multivariateanalysis.html" class="uri">http://little-book-of-r-for-multivariate-analysis.readthedocs.io/en/latest/src/multivariateanalysis.html</a> #ggplot2 Version of Figures in Lattice: Multivariate Data Visualization with R <a href="https://learnr.files.wordpress.com/2009/08/latbook.pdf" class="uri">https://learnr.files.wordpress.com/2009/08/latbook.pdf</a></p>
 <p>And datacamp,</p>
 </div>
-<div id="ggplot2-doc" class="section level1">
-<h1>ggplot2 doc</h1>
+<div id="ggplot2-doc" class="section level3">
+<h3>ggplot2 doc</h3>
 <p><a href="http://ggplot2.tidyverse.org/reference/#section-plot-basics" class="uri">http://ggplot2.tidyverse.org/reference/#section-plot-basics</a></p>
 </div>
-<div id="packages" class="section level1">
-<h1>packages</h1>
+<div id="packages" class="section level3">
+<h3>packages</h3>
 <p>Package ‘mlmRev’:Multilevel Modelling <a href="https://cran.r-project.org/web/packages/mlmRev/mlmRev.pdf" class="uri">https://cran.r-project.org/web/packages/mlmRev/mlmRev.pdf</a></p>
 <p>Package ‘nlme’:Fit and compare Gaussian linear and nonlinear mixed-effects models <a href="https://cran.r-project.org/web/packages/nlme/nlme.pdf" class="uri">https://cran.r-project.org/web/packages/nlme/nlme.pdf</a></p>
 <p>Package ‘GGally’: ‘GGally’ extends ‘ggplot2’ by adding several functions to reduce the complexity of combining geometric objects with transformed data. Some of these functions include a pairwise plot matrix, a two group pairwise plot matrix, a parallel coordinates plot, a survival plot, and several functions to plot networks. <a href="https://cran.r-project.org/web/packages/GGally/GGally.pdf" class="uri">https://cran.r-project.org/web/packages/GGally/GGally.pdf</a></p>
-<p>library(GGally) library(ggplot2) data(“iris”) ggpairs(iris, aes(colour = Species, alpha = 0.4))</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShHR2FsbHkpIFxubGlicmFyeShnZ3Bsb3QyKSBcbmRhdGEoXCJpcmlzXCIpXG5nZ3BhaXJzKGlyaXMsIGFlcyhjb2xvdXIgPSBTcGVjaWVzLCBhbHBoYSA9IDAuNCkpXG5gYGAifQ== -->
+<pre class="r"><code>library(GGally) 
+library(ggplot2) 
+data(&quot;iris&quot;)
+ggpairs(iris, aes(colour = Species, alpha = 0.4))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>Package ‘googleVis’ <a href="https://cran.rstudio.com/web/packages/googleVis/googleVis.pdf" class="uri">https://cran.rstudio.com/web/packages/googleVis/googleVis.pdf</a> R interface to Google’s chart tools, allowing users to create interactive charts based on data frames. Charts are displayed locally via the R HTTP help server. A modern browser with an Internet connection is required and for some charts a Flash player. The data remains local and is not uploaded to Google. <a href="https://developers.google.com/chart/" class="uri">https://developers.google.com/chart/</a></p>
 <p>Summary of Useful packages: <a href="https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages" class="uri">https://support.rstudio.com/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages</a></p>
 <p>Gaston Sanchez <a href="http://gastonsanchez.com/blog" class="uri">http://gastonsanchez.com/blog</a> <a href="https://gastonsanchez.wordpress.com/2012/08/27/scatterplot-matrices-with-ggplot/" class="uri">https://gastonsanchez.wordpress.com/2012/08/27/scatterplot-matrices-with-ggplot/</a></p>
@@ -214,21 +223,11 @@ $(document).ready(function () {
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Cmd+Option+I</em>.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShHR2FsbHkpIFxubGlicmFyeShnZ3Bsb3QyKSBcbmRhdGEoXCJpcmlzXCIpXG5nZ3BhaXJzKGlyaXMsIGFlcyhjb2xvdXIgPSBTcGVjaWVzLCBhbHBoYSA9IDAuNCkpXG5gYGAifQ== -->
-<pre class="r"><code>library(GGally) 
-library(ggplot2) 
-data(&quot;iris&quot;)
-ggpairs(iris, aes(colour = Species, alpha = 0.4))</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
 <p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Cmd+Shift+K</em> to preview the HTML file).</p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBDaGVhdHNoZWV0IE5vdGVib29rIGJ5IFNveW91bmcgUGFyayIKb3V0cHV0OgogIGh0bWxfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQpVcGRhdGVkIE1heSAzMSwgMjAxNwoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgoKCmN0cmwrTDogY2xlYXIgY29uc29sZQpybShsaXN0PWxzKCkpICNyZW1vdmUgYWxsIHRoZSB2YXJpYWJsZXMgZnJvbSB0aGUgd29ya3NwYWNlCmluc3RhbGwucGFja2FnZXMoImRwbHlyIikKZ2V0d2QoKQpzZXR3ZCgifi9EZXNrdG9wL1N0YXRpc3RpY3Nfd2l0aF9SX0R1a2UvMV9JbnRyb2R1Y3Rpb24gdG8gUHJvYmFiaWxpdHkgYW5kIERhdGEvcHJvamVjdC8iKQpsb2FkKCJicmZzczIwMTMuUkRhdGEiKQpsaWJyYXJ5KGdncGxvdDIpCmxpYnJhcnkoZHBseXIpCkZvciBtZCBmaWxlLCBtYWtlIHN1cmUg4oCccnVuIGFsbOKAnQogCiAKI0xhdHRpY2UKaHR0cDovL3d3dy5pc2lkLmFjLmluL35kZWVwYXlhbi9SLXR1dG9yaWFscy9sYWJzLzA0X2xhdHRpY2VfbGFiLnBkZgogCiNLZXlib2FyZCBzaG9ydGN1dApodHRwczovL3N1cHBvcnQucnN0dWRpby5jb20vaGMvZW4tdXMvYXJ0aWNsZXMvMjAwNzExODUzLUtleWJvYXJkLVNob3J0Y3V0cwogCiNSIGNvbW1hbmRzCmh0dHBzOi8vd3d3LnBlcnNvbmFsaXR5LXByb2plY3Qub3JnL3Ivci5jb21tYW5kcy5odG1sCiAKI1IgbXVsdGl2YXJpYXRlCmh0dHA6Ly9saXR0bGUtYm9vay1vZi1yLWZvci1tdWx0aXZhcmlhdGUtYW5hbHlzaXMucmVhZHRoZWRvY3MuaW8vZW4vbGF0ZXN0L3NyYy9tdWx0aXZhcmlhdGVhbmFseXNpcy5odG1sCiNnZ3Bsb3QyIFZlcnNpb24gb2YgRmlndXJlcyBpbiBMYXR0aWNlOiBNdWx0aXZhcmlhdGUgRGF0YSBWaXN1YWxpemF0aW9uIHdpdGggUgpodHRwczovL2xlYXJuci5maWxlcy53b3JkcHJlc3MuY29tLzIwMDkvMDgvbGF0Ym9vay5wZGYKIApBbmQgZGF0YWNhbXAsCiAKI2dncGxvdDIgZG9jCmh0dHA6Ly9nZ3Bsb3QyLnRpZHl2ZXJzZS5vcmcvcmVmZXJlbmNlLyNzZWN0aW9uLXBsb3QtYmFzaWNzCiAKI3BhY2thZ2VzClBhY2thZ2Ug4oCYbWxtUmV24oCZOk11bHRpbGV2ZWwgTW9kZWxsaW5nCmh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy9tbG1SZXYvbWxtUmV2LnBkZgogClBhY2thZ2Ug4oCYbmxtZeKAmTpGaXQgYW5kIGNvbXBhcmUgR2F1c3NpYW4gbGluZWFyIGFuZCBub25saW5lYXIgbWl4ZWQtZWZmZWN0cyBtb2RlbHMKaHR0cHM6Ly9jcmFuLnItcHJvamVjdC5vcmcvd2ViL3BhY2thZ2VzL25sbWUvbmxtZS5wZGYKIApQYWNrYWdlIOKAmEdHYWxseeKAmToKJ0dHYWxseScgZXh0ZW5kcyAnZ2dwbG90MicgYnkgYWRkaW5nIHNldmVyYWwgZnVuY3Rpb25zIHRvIHJlZHVjZSB0aGUgY29tcGxleGl0eSBvZiBjb21iaW5pbmcgZ2VvbWV0cmljIG9iamVjdHMgd2l0aCB0cmFuc2Zvcm1lZCBkYXRhLiBTb21lIG9mIHRoZXNlIGZ1bmN0aW9ucyBpbmNsdWRlIGEgcGFpcndpc2UgcGxvdCBtYXRyaXgsIGEgdHdvIGdyb3VwIHBhaXJ3aXNlIHBsb3QgbWF0cml4LCBhIHBhcmFsbGVsIGNvb3JkaW5hdGVzIHBsb3QsIGEgc3Vydml2YWwgcGxvdCwgYW5kIHNldmVyYWwgZnVuY3Rpb25zIHRvIHBsb3QgbmV0d29ya3MuCmh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy9HR2FsbHkvR0dhbGx5LnBkZgogCmxpYnJhcnkoR0dhbGx5KSAKbGlicmFyeShnZ3Bsb3QyKSAKZGF0YSjigJxpcmlz4oCdKQpnZ3BhaXJzKGlyaXMsIGFlcyhjb2xvdXIgPSBTcGVjaWVzLCBhbHBoYSA9IDAuNCkpCiAKIApQYWNrYWdlIOKAmGdvb2dsZVZpc+KAmQpodHRwczovL2NyYW4ucnN0dWRpby5jb20vd2ViL3BhY2thZ2VzL2dvb2dsZVZpcy9nb29nbGVWaXMucGRmClIgaW50ZXJmYWNlIHRvIEdvb2dsZSdzIGNoYXJ0IHRvb2xzLCBhbGxvd2luZyB1c2VycyB0byBjcmVhdGUgaW50ZXJhY3RpdmUgY2hhcnRzIGJhc2VkIG9uIGRhdGEgZnJhbWVzLiBDaGFydHMgYXJlIGRpc3BsYXllZCBsb2NhbGx5IHZpYSB0aGUgUiBIVFRQIGhlbHAgc2VydmVyLiBBIG1vZGVybiBicm93c2VyIHdpdGggYW4gSW50ZXJuZXQgY29ubmVjdGlvbiBpcyByZXF1aXJlZCBhbmQgZm9yIHNvbWUgY2hhcnRzIGEgRmxhc2ggcGxheWVyLiBUaGUgZGF0YSByZW1haW5zIGxvY2FsIGFuZCBpcyBub3QgdXBsb2FkZWQgdG8gR29vZ2xlLgpodHRwczovL2RldmVsb3BlcnMuZ29vZ2xlLmNvbS9jaGFydC8KIAogCiAKU3VtbWFyeSBvZiBVc2VmdWwgcGFja2FnZXM6Cmh0dHBzOi8vc3VwcG9ydC5yc3R1ZGlvLmNvbS9oYy9lbi11cy9hcnRpY2xlcy8yMDEwNTc5ODctUXVpY2stbGlzdC1vZi11c2VmdWwtUi1wYWNrYWdlcwogCkdhc3RvbiBTYW5jaGV6Cmh0dHA6Ly9nYXN0b25zYW5jaGV6LmNvbS9ibG9nCmh0dHBzOi8vZ2FzdG9uc2FuY2hlei53b3JkcHJlc3MuY29tLzIwMTIvMDgvMjcvc2NhdHRlcnBsb3QtbWF0cmljZXMtd2l0aC1nZ3Bsb3QvCgoKYGBge3J9CnBsb3QoY2FycykKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ21kK09wdGlvbitJKi4KCmBgYHtyfQpsaWJyYXJ5KEdHYWxseSkgCmxpYnJhcnkoZ2dwbG90MikgCmRhdGEoImlyaXMiKQpnZ3BhaXJzKGlyaXMsIGFlcyhjb2xvdXIgPSBTcGVjaWVzLCBhbHBoYSA9IDAuNCkpCmBgYAoKCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ21kK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBDaGVhdHNoZWV0IE5vdGVib29rIGJ5IFNveW91bmcgUGFyayIKb3V0cHV0OgogIGh0bWxfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQpVcGRhdGVkIE1heSAzMSwgMjAxNwoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgoKCmN0cmwrTDogY2xlYXIgY29uc29sZQpybShsaXN0PWxzKCkpICNyZW1vdmUgYWxsIHRoZSB2YXJpYWJsZXMgZnJvbSB0aGUgd29ya3NwYWNlCmluc3RhbGwucGFja2FnZXMoImRwbHlyIikKZ2V0d2QoKQpzZXR3ZCgifi9EZXNrdG9wL1N0YXRpc3RpY3Nfd2l0aF9SX0R1a2UvMV9JbnRyb2R1Y3Rpb24gdG8gUHJvYmFiaWxpdHkgYW5kIERhdGEvcHJvamVjdC8iKQpsb2FkKCJicmZzczIwMTMuUkRhdGEiKQpsaWJyYXJ5KGdncGxvdDIpCmxpYnJhcnkoZHBseXIpCkZvciBtZCBmaWxlLCBtYWtlIHN1cmUg4oCccnVuIGFsbOKAnQogCiAKIyMjTGF0dGljZQpodHRwOi8vd3d3LmlzaWQuYWMuaW4vfmRlZXBheWFuL1ItdHV0b3JpYWxzL2xhYnMvMDRfbGF0dGljZV9sYWIucGRmCiAKIyMjS2V5Ym9hcmQgc2hvcnRjdXQKaHR0cHM6Ly9zdXBwb3J0LnJzdHVkaW8uY29tL2hjL2VuLXVzL2FydGljbGVzLzIwMDcxMTg1My1LZXlib2FyZC1TaG9ydGN1dHMKIAojIyNSIGNvbW1hbmRzCmh0dHBzOi8vd3d3LnBlcnNvbmFsaXR5LXByb2plY3Qub3JnL3Ivci5jb21tYW5kcy5odG1sCiAKIyMjUiBtdWx0aXZhcmlhdGUKaHR0cDovL2xpdHRsZS1ib29rLW9mLXItZm9yLW11bHRpdmFyaWF0ZS1hbmFseXNpcy5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qvc3JjL211bHRpdmFyaWF0ZWFuYWx5c2lzLmh0bWwKI2dncGxvdDIgVmVyc2lvbiBvZiBGaWd1cmVzIGluIExhdHRpY2U6IE11bHRpdmFyaWF0ZSBEYXRhIFZpc3VhbGl6YXRpb24gd2l0aCBSCmh0dHBzOi8vbGVhcm5yLmZpbGVzLndvcmRwcmVzcy5jb20vMjAwOS8wOC9sYXRib29rLnBkZgogCkFuZCBkYXRhY2FtcCwKIAojIyNnZ3Bsb3QyIGRvYwpodHRwOi8vZ2dwbG90Mi50aWR5dmVyc2Uub3JnL3JlZmVyZW5jZS8jc2VjdGlvbi1wbG90LWJhc2ljcwogCiMjI3BhY2thZ2VzClBhY2thZ2Ug4oCYbWxtUmV24oCZOk11bHRpbGV2ZWwgTW9kZWxsaW5nCmh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy9tbG1SZXYvbWxtUmV2LnBkZgogClBhY2thZ2Ug4oCYbmxtZeKAmTpGaXQgYW5kIGNvbXBhcmUgR2F1c3NpYW4gbGluZWFyIGFuZCBub25saW5lYXIgbWl4ZWQtZWZmZWN0cyBtb2RlbHMKaHR0cHM6Ly9jcmFuLnItcHJvamVjdC5vcmcvd2ViL3BhY2thZ2VzL25sbWUvbmxtZS5wZGYKIApQYWNrYWdlIOKAmEdHYWxseeKAmToKJ0dHYWxseScgZXh0ZW5kcyAnZ2dwbG90MicgYnkgYWRkaW5nIHNldmVyYWwgZnVuY3Rpb25zIHRvIHJlZHVjZSB0aGUgY29tcGxleGl0eSBvZiBjb21iaW5pbmcgZ2VvbWV0cmljIG9iamVjdHMgd2l0aCB0cmFuc2Zvcm1lZCBkYXRhLiBTb21lIG9mIHRoZXNlIGZ1bmN0aW9ucyBpbmNsdWRlIGEgcGFpcndpc2UgcGxvdCBtYXRyaXgsIGEgdHdvIGdyb3VwIHBhaXJ3aXNlIHBsb3QgbWF0cml4LCBhIHBhcmFsbGVsIGNvb3JkaW5hdGVzIHBsb3QsIGEgc3Vydml2YWwgcGxvdCwgYW5kIHNldmVyYWwgZnVuY3Rpb25zIHRvIHBsb3QgbmV0d29ya3MuCmh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy9HR2FsbHkvR0dhbGx5LnBkZgogCgpgYGB7cn0KbGlicmFyeShHR2FsbHkpIApsaWJyYXJ5KGdncGxvdDIpIApkYXRhKCJpcmlzIikKZ2dwYWlycyhpcmlzLCBhZXMoY29sb3VyID0gU3BlY2llcywgYWxwaGEgPSAwLjQpKQpgYGAKIApQYWNrYWdlIOKAmGdvb2dsZVZpc+KAmQpodHRwczovL2NyYW4ucnN0dWRpby5jb20vd2ViL3BhY2thZ2VzL2dvb2dsZVZpcy9nb29nbGVWaXMucGRmClIgaW50ZXJmYWNlIHRvIEdvb2dsZSdzIGNoYXJ0IHRvb2xzLCBhbGxvd2luZyB1c2VycyB0byBjcmVhdGUgaW50ZXJhY3RpdmUgY2hhcnRzIGJhc2VkIG9uIGRhdGEgZnJhbWVzLiBDaGFydHMgYXJlIGRpc3BsYXllZCBsb2NhbGx5IHZpYSB0aGUgUiBIVFRQIGhlbHAgc2VydmVyLiBBIG1vZGVybiBicm93c2VyIHdpdGggYW4gSW50ZXJuZXQgY29ubmVjdGlvbiBpcyByZXF1aXJlZCBhbmQgZm9yIHNvbWUgY2hhcnRzIGEgRmxhc2ggcGxheWVyLiBUaGUgZGF0YSByZW1haW5zIGxvY2FsIGFuZCBpcyBub3QgdXBsb2FkZWQgdG8gR29vZ2xlLgpodHRwczovL2RldmVsb3BlcnMuZ29vZ2xlLmNvbS9jaGFydC8KIAogCiAKU3VtbWFyeSBvZiBVc2VmdWwgcGFja2FnZXM6Cmh0dHBzOi8vc3VwcG9ydC5yc3R1ZGlvLmNvbS9oYy9lbi11cy9hcnRpY2xlcy8yMDEwNTc5ODctUXVpY2stbGlzdC1vZi11c2VmdWwtUi1wYWNrYWdlcwogCkdhc3RvbiBTYW5jaGV6Cmh0dHA6Ly9nYXN0b25zYW5jaGV6LmNvbS9ibG9nCmh0dHBzOi8vZ2FzdG9uc2FuY2hlei53b3JkcHJlc3MuY29tLzIwMTIvMDgvMjcvc2NhdHRlcnBsb3QtbWF0cmljZXMtd2l0aC1nZ3Bsb3QvCgoKYGBge3J9CnBsb3QoY2FycykKYGBgCgpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ21kK09wdGlvbitJKi4KCgoKCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ21kK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuCg==</div>
 
 
 

@@ -23,26 +23,26 @@ library(dplyr)
 For md file, make sure “run all”
  
  
-#Lattice
+###Lattice
 http://www.isid.ac.in/~deepayan/R-tutorials/labs/04_lattice_lab.pdf
  
-#Keyboard shortcut
+###Keyboard shortcut
 https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts
  
-#R commands
+###R commands
 https://www.personality-project.org/r/r.commands.html
  
-#R multivariate
+###R multivariate
 http://little-book-of-r-for-multivariate-analysis.readthedocs.io/en/latest/src/multivariateanalysis.html
 #ggplot2 Version of Figures in Lattice: Multivariate Data Visualization with R
 https://learnr.files.wordpress.com/2009/08/latbook.pdf
  
 And datacamp,
  
-#ggplot2 doc
+###ggplot2 doc
 http://ggplot2.tidyverse.org/reference/#section-plot-basics
  
-#packages
+###packages
 Package ‘mlmRev’:Multilevel Modelling
 https://cran.r-project.org/web/packages/mlmRev/mlmRev.pdf
  
@@ -53,11 +53,13 @@ Package ‘GGally’:
 'GGally' extends 'ggplot2' by adding several functions to reduce the complexity of combining geometric objects with transformed data. Some of these functions include a pairwise plot matrix, a two group pairwise plot matrix, a parallel coordinates plot, a survival plot, and several functions to plot networks.
 https://cran.r-project.org/web/packages/GGally/GGally.pdf
  
+
+```{r}
 library(GGally) 
 library(ggplot2) 
-data(“iris”)
+data("iris")
 ggpairs(iris, aes(colour = Species, alpha = 0.4))
- 
+```
  
 Package ‘googleVis’
 https://cran.rstudio.com/web/packages/googleVis/googleVis.pdf
@@ -80,12 +82,7 @@ plot(cars)
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
-```{r}
-library(GGally) 
-library(ggplot2) 
-data("iris")
-ggpairs(iris, aes(colour = Species, alpha = 0.4))
-```
+
 
 
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
